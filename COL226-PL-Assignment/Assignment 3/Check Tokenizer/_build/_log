@@ -1,0 +1,13 @@
+### Starting build.
+# Target: a2.mll, tags: { extension:mll, file:a2.mll, lexer, ocaml, ocamllex, quiet }
+/usr/bin/ocamllex.opt -q a2.mll
+# Target: a2.ml.depends, tags: { extension:ml, file:a2.ml, ocaml, ocamldep, quiet }
+/usr/bin/ocamldep.opt -modules a2.ml > a2.ml.depends
+# Target: a2.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:a2.cmo, file:a2.ml, implem, ocaml, quiet }
+/usr/bin/ocamlc.opt -c -o a2.cmo a2.ml
++ /usr/bin/ocamlc.opt -c -o a2.cmo a2.ml
+File "a2.mll", line 104, characters 38-40:
+Error: This variant expression is expected to have type token
+       The constructor :: does not belong to type token
+Command exited with code 2.
+# Compilation unsuccessful.

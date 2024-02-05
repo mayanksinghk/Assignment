@@ -1,0 +1,1 @@
+./outgen.out $1

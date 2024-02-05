@@ -1,0 +1,15 @@
+### Starting build.
+Backtrace:
+                      - Failed to build the target a2.cmo
+                          - Building a2.cmo:
+                              - Failed to build all of these:
+                                  - Building a2.ml:
+                                      - Failed to build all of these:
+                                          - Building a2.mly
+                                          - Building a2.mll
+                                  - Building a2.mli:
+                                      - Building a2.mly
+                                  - Building a2.mlpack
+                                  - Building a2.mli:
+                                      - Building a2.mly
+# Compilation unsuccessful.

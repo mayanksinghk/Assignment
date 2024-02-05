@@ -1,0 +1,6 @@
+./evaluate.py -n1 2 -n 5 -t1 1 -t 3
+./evaluate.py -n1 0 -n 5 -t1 1 -t 3
+./evaluate.py -n1 2 -n 1 -t1 1 -t 3
+./evaluate.py -n1 2 -n 5 -t1 0 -t 3
+./evaluate.py -n1 2 -n 5 -t1 3 -t 2
+./evaluate.py -n1 2 -n 5 -t1 3 -t 6

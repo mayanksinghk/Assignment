@@ -1,0 +1,22 @@
+### Starting build.
+# Target: StackFrame.ml.depends, tags: { extension:ml, file:StackFrame.ml, ocaml, ocamldep, quiet }
+ocamldep.opt -modules StackFrame.ml > StackFrame.ml.depends
+# Target: StackFrame.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:StackFrame.cmo, file:StackFrame.ml, implem, ocaml, quiet }
+ocamlc.opt -c -o StackFrame.cmo StackFrame.ml
+# Target: Lexer.mll, tags: { extension:mll, file:Lexer.mll, lexer, ocaml, ocamllex, quiet }
+ocamllex.opt -q Lexer.mll
+# Target: Lexer.ml.depends, tags: { extension:ml, file:Lexer.ml, ocaml, ocamldep, quiet }
+ocamldep.opt -modules Lexer.ml > Lexer.ml.depends
+# Target: Parser.mly, tags: { extension:mly, file:Parser.mly, infer, ocaml, ocamlyacc, parser, quiet }
+ocamlyacc Parser.mly
+# Target: Parser.mli.depends, tags: { extension:mli, file:Parser.mli, ocaml, ocamldep, quiet }
+ocamldep.opt -modules Parser.mli > Parser.mli.depends
+# Target: Parser.cmi, tags: { byte, compile, extension:mli, file:Parser.mli, interf, ocaml, quiet }
+ocamlc.opt -c -o Parser.cmi Parser.mli
+# Target: Lexer.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:Lexer.cmo, file:Lexer.ml, implem, ocaml, quiet }
+ocamlc.opt -c -o Lexer.cmo Lexer.ml
+# Target: Parser.ml.depends, tags: { extension:ml, file:Parser.ml, ocaml, ocamldep, quiet }
+ocamldep.opt -modules Parser.ml > Parser.ml.depends
+# Target: Parser.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:Parser.cmo, file:Parser.ml, implem, ocaml, quiet }
+ocamlc.opt -c -o Parser.cmo Parser.ml
+# Compilation successful.

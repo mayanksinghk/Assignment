@@ -1,0 +1,22 @@
+### Starting build.
+# Target: Krivine.ml.depends, tags: { extension:ml, file:Krivine.ml, ocaml, ocamldep, quiet }
+ocamldep.opt -modules Krivine.ml > Krivine.ml.depends # cached
+# Target: Krivine.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:Krivine.cmo, file:Krivine.ml, implem, ocaml, quiet }
+ocamlc.opt -c -o Krivine.cmo Krivine.ml # cached
+# Target: Parser.mly, tags: { extension:mly, file:Parser.mly, infer, ocaml, ocamlyacc, parser, quiet }
+ocamlyacc Parser.mly # cached
+# Target: Parser.mli.depends, tags: { extension:mli, file:Parser.mli, ocaml, ocamldep, quiet }
+ocamldep.opt -modules Parser.mli > Parser.mli.depends # cached
+# Target: Parser.cmi, tags: { byte, compile, extension:mli, file:Parser.mli, interf, ocaml, quiet }
+ocamlc.opt -c -o Parser.cmi Parser.mli # cached
+# Target: Parser.ml.depends, tags: { extension:ml, file:Parser.ml, ocaml, ocamldep, quiet }
+ocamldep.opt -modules Parser.ml > Parser.ml.depends # cached
+# Target: Parser.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:Parser.cmo, file:Parser.ml, implem, ocaml, quiet }
+ocamlc.opt -c -o Parser.cmo Parser.ml # cached
+# Target: Lexer.mll, tags: { extension:mll, file:Lexer.mll, lexer, ocaml, ocamllex, quiet }
+ocamllex.opt -q Lexer.mll
+# Target: Lexer.ml.depends, tags: { extension:ml, file:Lexer.ml, ocaml, ocamldep, quiet }
+ocamldep.opt -modules Lexer.ml > Lexer.ml.depends
+# Target: Lexer.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:Lexer.cmo, file:Lexer.ml, implem, ocaml, quiet }
+ocamlc.opt -c -o Lexer.cmo Lexer.ml
+# Compilation successful.
